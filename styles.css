@@ -60,7 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NAVBAR */
 .header {
-    background-color: var(--color-fondo);
+    /*background-color: var(--color-fondo);*/
+    background-color: #f9f9f9;
     border-bottom: 1px solid #f0f0f0;
     position: sticky; 
     top: 0;
@@ -101,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-texto-claro);
     font-weight: 700;
     font-family: var(--fuente-cuerpo);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .navbar-links a[href="#turnos"] {
@@ -277,19 +278,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* TRATAMIENTOS */
-#tratamientos.seccion{
-    max-width: 100%;
-}
-
 .tratamientos-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
 }
 
 .tratamiento-card {
-    width: 350px; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     overflow: hidden;
@@ -486,6 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 .turnos-texto {
     flex: 1; 
     max-width: 500px;
+    padding-bottom: 30px;
 }
 
 .turnos-imagen {
@@ -578,7 +574,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .community-action {
-    
     text-align: center;
     margin-top: 40px;
 }
@@ -604,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 /* FOOTER */
 .footer {
     background-color: #f9f9f9; 
-    padding: 70px 30px 0 30px; 
+    padding: 30px 30px 0 30px; 
     border-top: 1px solid #eeeeee;
 }
 
@@ -613,9 +608,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between; 
     flex-wrap: wrap;
     gap: 40px;
-    
     max-width: 1100px;
-    margin: 0 auto 50px auto; 
+    margin: 10px auto; 
 }
 
 .footer-col {
@@ -664,7 +658,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-bottom {
     border-top: 1px solid #eeeeee;
-    padding: 25px 0;
+    padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
     color: #aaaaaa; 
@@ -677,23 +671,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
     bottom: 30px; 
     right: 30px; 
-    
     background-color: #25D366; 
     color: #FFF; 
-    
     border-radius: 50%; 
     border: none;
-   
     display: flex;
     align-items: center;
     justify-content: center;
-    
     font-size: 0;
-    
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-    
     z-index: 99; 
-    
     transition: transform 0.3s ease;
 }
 
@@ -714,30 +701,31 @@ h1, h2, h3, h4, h5, h6 {
         overflow: hidden;
     }
 
+    section[id], footer[id] {
+        scroll-margin-top: 80px;
+    }
+
+    .seccion{
+        padding: 40px 30px;
+    }
+
     /* NAVBAR */
     .navbar-links {
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
         background-color: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
-        
         position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-
-        
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
-        
         z-index: 1000; 
     }
-
     
     .navbar-links.active {
         transform: translateX(0); 
@@ -763,6 +751,7 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         min-height: auto;
         padding: 60px 20px;
+        gap: 20px;
     }
     
     .presentacion-texto {
@@ -770,22 +759,26 @@ h1, h2, h3, h4, h5, h6 {
     }
     .presentacion-imagen {
         order: 1;
-        margin-bottom: 30px;
     }
 
     h1, #presentacion h1 {
-        font-size: 2.2rem; 
+        font-size: 1.9rem; 
     }
-    h2, .seccion h2 {
+    h2, .seccion h2, #turnos h2 {
         font-size: 1.8rem; 
     }
-
 
     /* TARJETAS */
     .ubicacion-card,
     .tratamiento-card {
         width: 100%;
         max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* TRATAMIENTOS */
+    .tratamientos-container {
+        grid-template-columns: 1fr;
     }
 
     /* TURNOS */
@@ -800,10 +793,10 @@ h1, h2, h3, h4, h5, h6 {
     
     .turnos-texto {
         text-align: center; 
+        padding-bottom: 0;
     }
 
     .turnos-imagen {
-        margin-top: 30px; 
         display: none;
     }
 
