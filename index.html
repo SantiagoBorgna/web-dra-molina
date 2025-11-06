@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Natalia H. Molina</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,11 +22,11 @@
                 <span class="icon-bar"></span>
             </button>
             <ul class="navbar-links">
-                <li><a href="#ubicacion">Dónde Encontrarme</a></li>
+                <li><a href="#ubicacion">Dónde encontrarme</a></li>
                 <li><a href="#tratamientos">Tratamientos</a></li>
-                <li><a href="#comunidad">Mi Comunidad</a></li>
+                <li><a href="#comunidad">Mi comunidad</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#turnos">Solicitar Cita</a></li>
+                <li><a href="#turnos">Solicitar cita</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +36,8 @@
         <section id="presentacion" class="seccion-presentacion">
             <div class="presentacion-texto">
                 <h1>Dra. Natalia H. Molina</h1>
-                <p>Especialista en Medicina Estética. Comprometida con tu salud y bienestar.</p>
+                <p>Médico Estético</p>
+                <p>Comprometida con tu salud y bienestar.</p>
             </div>
 
             <div class="presentacion-imagen">
@@ -41,25 +46,32 @@
         </section>
 
         <section id="ubicacion" class="seccion">
-            <h2>Dónde Encontrarme</h2>
-            <p>Atiendo en las siguientes instituciones. Elige la que te quede más cómoda.</p>
+            <h2>Dónde encontrarme</h2>
+            <p>Paso consulta en las siguientes clínicas. Elige la que te quede más cómoda.</p>
             
             <div class="ubicacion-container">
                 <div class="ubicacion-card">
-                    <h3>Consultorio Privado (Centro)</h3>
-                    <p>Av. Siempre Viva 123, Piso 4, Consultorio 402.</p>
-                    <p>Horarios: Lunes y Miércoles, 9:00 - 14:00</p>
-                    <a href="[LINK_GOOGLE_MAPS_1]" class="boton-secundario" target="_blank" rel="noopener noreferrer">Ver en Mapa</a>
+                    <img src="images/casa1.jpg" alt="Centro Médico Cadiz Salud">
+                    <div class="card-content"> 
+                        <h3>Centro Médico Cadiz Salud</h3>
+                        <p>C. Sta. María de la Cabeza, 1, Cádiz, España</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://maps.app.goo.gl/sHpNsAo7z5JVccu67" class="boton-secundario" target="_blank" rel="noopener noreferrer" ...>Ver en Mapa</a>
+                    </div>
                 </div>
                 
                 <div class="ubicacion-card">
-                    <h3>Hospital Metropolitano</h3>
-                    <p>Calle Falsa 456, Sector B, Admisiones Cirugía.</p>
-                    <p>Horarios: Viernes, 15:00 - 19:00</p>
-                    <a href="[LINK_GOOGLE_MAPS_2]" class="boton-secundario" target="_blank" rel="noopener noreferrer">Ver en Mapa</a>
+                    <img src="images/casa1.jpg" alt="Centro Médico Cadiz Salud">
+                    <div class="card-content">
+                        <h3>Centro Médico Cadiz Salud</h3>
+                        <p>Calle Falsa 456, Sector B, Admisiones Cirugía.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://maps.app.goo.gl/sHpNsAo7z5JVccu67" class="boton-secundario" target="_blank" rel="noopener noreferrer" ...>Ver en Mapa</a>
+                    </div>
                 </div>
-                
-                </div>
+            </div>
         </section>
 
         <section id="tratamientos" class="seccion">
@@ -68,40 +80,113 @@
 
             <div class="tratamientos-container">
                 <div class="tratamiento-card">
-                    <img src="images/la chabona.jpeg" alt="Tratamientos Faciales">
-                    <h3>Cirugía Facial</h3>
-                    <p>Procedimientos avanzados para armonizar y rejuvenecer el rostro, con resultados naturales.</p>
+                    <img src="images/la chabona.jpeg" alt="Imagen del Tratamiento 1">
+                    <div class="card-overlay">
+                        <h3>Nombre del Tratamiento</h3>
+                        <button class="boton-info" data-target="info-tratamiento-1">
+                            Más información
+                        </button>
+                    </div>
                 </div>
 
                 <div class="tratamiento-card">
-                    <img src="images/la chabona.jpeg" alt="Tratamientos Corporales">
-                    <h3>Tratamientos Corporales</h3>
-                    <p>Soluciones personalizadas para el contorno corporal, celulitis y flacidez.</p>
+                    <img src="images/la chabona.jpeg" alt="Imagen del Tratamiento 1">
+                    <div class="card-overlay">
+                        <h3>Nombre del Tratamiento</h3>
+                        <button class="boton-info" data-target="info-tratamiento-2">
+                            Más información
+                        </button>
+                    </div>
                 </div>
 
                 <div class="tratamiento-card">
-                    <img src="images/la chabona.jpeg" alt="Medicina Estética">
-                    <h3>Medicina Estética</h3>
-                    <p>Toxina botulínica, rellenos de ácido hialurónico y tratamientos de bioestimulación.</p>
+                    <img src="images/la chabona.jpeg" alt="Imagen del Tratamiento 1">
+                    <div class="card-overlay">
+                        <h3>Nombre del Tratamiento</h3>
+                        <button class="boton-info" data-target="info-tratamiento-3">
+                            Más información
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="turnos" class="seccion-cta"> <h2>Solicitar Tu Cita Online</h2>
-            <p>Puedes sacar tu turno fácilmente a través de [Doctoralia/WhatsApp/etc.]</p>
-            <a href="https://wa.me/34623981112?text=Hola%20Dra%2C%20me%20gustaria%20coordinar%20un%20turnito%20con%20vose" class="boton-principal" target="_blank" rel="noopener noreferrer">
-                Solicitar Online
-            </a>
+        <div id="modal-tratamiento" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <a href="#turnos" class="boton-principal-modal">Solicitar cita</a>
+            </div>
+        </div>
+
+        <section id="turnos" class="seccion seccion-cta">
+            <div class="contenido-centrado">
+                <div class="turnos-imagen">
+                    <img src="ruta/a/foto-consultorio.jpg" alt="Consultorio de la Dra. Molina">
+                </div>
+                
+                <div class="turnos-texto">
+                    <h2>Solicitar un Turno</h2>
+                    <p>El primer paso hacia tu bienestar. <br>Reserva tu consulta de forma fácil y rápida.</p>
+                    <a href="https://wa.me/34623981112?text=Hola%20Dra%2C%20" class="boton-principal" target="_blank" rel="noopener noreferrer">
+                        Solicitar cita
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section id="comunidad" class="seccion">
-            <h2>Mi Comunidad</h2>
-            <p>Sigue mis consejos y novedades en redes sociales.</p>
-            
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="https://www.instagram.com/dra.natalia.molina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" class="boton-cta-hero" target="_blank" rel="noopener noreferrer">
-                    Sígueme en Instagram
-                </a>
+            <div class="contenido-centrado"> 
+                <h2>Mi comunidad</h2>
+                <p>Sigue mis consejos y novedades en mis redes sociales.</p>
+
+                <div class="community-grid">
+                    
+                    <a href="https://www.instagram.com/reel/DQr1C-6jODG/?utm_source=ig_web_copy_link" class="community-post" target="_blank" rel="noopener noreferrer">
+                        <img src="images/reel1.png" alt="Vistazo a un reel de Instagram">
+                        <div class="post-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>                   
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/reel/DQr1C-6jODG/?utm_source=ig_web_copy_link" class="community-post" target="_blank" rel="noopener noreferrer">
+                        <img src="images/reel1.png" alt="Vistazo a un reel de Instagram">
+                        <div class="post-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>                   
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/reel/DQr1C-6jODG/?utm_source=ig_web_copy_link" class="community-post" target="_blank" rel="noopener noreferrer">
+                        <img src="images/reel1.png" alt="Vistazo a un reel de Instagram">
+                        <div class="post-overlay">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+                            </svg>      
+                        </div>              
+                    </a>
+                </div> 
+
+                <div class="community-action">
+                    <a href="https://www.instagram.com/dra.natalia.molina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" 
+                    class="boton-cta-hero" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.556 0 5.829 0 8s.01 2.444.048 3.297c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.048c.852-.04 1.433-.174 1.942-.372.526-.205.972-.478 1.417-.923.445-.444.719-.89 1.923-1.416.198-.51.333-1.09.372-1.942C15.99 10.444 16 10.171 16 8s-.01-2.444-.048-3.297c-.04-.852-.174-1.433-.372-1.942a3.916 3.916 0 0 0-.923-1.417A3.916 3.916 0 0 0 13.24.42c-.51-.198-1.09-.333-1.942-.372C10.444.01 10.171 0 8 0zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.843.038-1.096.047-3.231.047s-2.389-.009-3.232-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.598-.92c-.11-.281-.24-.705-.275-1.485-.038-.843-.047-1.096-.047-3.231s.009-2.389.047-3.232c.035-.78.166 1.204.275-1.486.145-.373.319-.64.599-.92.28-.28.546.453.92-.598.281-.11.705-.24 1.485-.276C5.611 1.449 5.864 1.442 8 1.442zM8 4.202c-2.09 0-3.798 1.708-3.798 3.798s1.708 3.798 3.798 3.798 3.798-1.708 3.798-3.798S10.09 4.202 8 4.202zm0 6.156c-1.305 0-2.358-1.053-2.358-2.358s1.053-2.358 2.358-2.358 2.358 1.053 2.358 2.358-1.053 2.358-2.358 2.358zm4.905-6.817c-.596 0-1.08.484-1.08 1.08s.484 1.08 1.08 1.08 1.08-.484 1.08-1.08-.484-1.08-1.08-1.08z"/>
+                        </svg>
+                        
+                        <span>Sígueme en Instagram</span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -111,7 +196,7 @@
             
             <div class="footer-col">
                 <a href="#presentacion" class="footer-brand">Dra. Natalia H. Molina</a>
-                <p>Especialista en Medicina Estética.</p>
+                <p>Médico Estético.</p>
                 <p>Comprometida con tu salud y bienestar.</p>
             </div>
             
@@ -129,7 +214,6 @@
                 <h3>Contacto</h3>
                 <p><strong>Email:</strong> natimolina2000@gmail.com</p>
                 <p><strong>Teléfono:</strong> +34 623 98 11 12</p>
-                <p><strong>Dirección:</strong> Av. Siempre Viva 123, Consultorio 402.</p>
             </div>
 
         </div>
