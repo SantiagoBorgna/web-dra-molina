@@ -24,20 +24,20 @@ const tratamientosData = {
         description: "A diferencia de los rellenos, los bioestimuladores no aportan volumen de inmediato, sino que trabajan estimulando a tu propio cuerpo. Son sustancias inyectables (como la hidroxiapatita cálcica o el ácido poliláctico) que actúan como 'activadores', incentivando a tus células (fibroblastos) para que produzcan nuevo colágeno y elastina. Este tratamiento es la mejor opción para combatir la flacidez facial y corporal (cuello, escote, brazos) y recuperar la densidad perdida. Los resultados son graduales, naturales y muy duraderos, logrando un 'efecto lifting' sin cirugía."
     },
     "info-tratamiento-4": {
-        title: "Hidratación Profunda de la Piel",
-        description: "Este tratamiento, a menudo llamado 'Skinbooster', es un baño de hidratación intensiva para la piel. Consiste en microinyecciones de ácido hialurónico de muy baja densidad y complejos vitamínicos que nutren la dermis desde dentro. A diferencia de las cremas, actúa en las capas profundas, restaurando el equilibrio hídrico, mejorando la elasticidad y la textura. Es el tratamiento perfecto para pieles deshidratadas, apagadas o con finas líneas, devolviéndoles una luminosidad y frescura inmediatas."
-    },
-    "info-tratamiento-5": {
-        title: "Peelings Químicos",
-        description: "El peeling químico es un procedimiento dermatológico controlado que utiliza soluciones específicas para exfoliar y acelerar la renovación de las capas superficiales de la piel. Al eliminar las células muertas, se estimula la regeneración celular. Es un tratamiento excelente para mejorar la textura general, unificar el tono, atenuar manchas solares o de acné, controlar la grasa y suavizar líneas finas. El resultado es una piel visiblemente más uniforme, suave y luminosa. Personalizamos la intensidad del peeling según tu tipo de piel y objetivos."
-    },
-    "info-tratamiento-6": {
         title: "Mesoterapia Facial y Corporal",
         description: "La mesoterapia consiste en la aplicación de microinyecciones con un cóctel personalizado de sustancias activas (vitaminas, aminoácidos, minerales, ácido hialurónico) en la capa media de la piel (mesodermo). A nivel facial, revitaliza, hidrata y aporta luminosidad (efecto 'mesolift'). A nivel corporal, es uno de los tratamientos más efectivos para combatir la celulitis, mejorar la circulación y tratar la grasa localizada en zonas rebeldes."
     },
-    "info-tratamiento-7": {
+    "info-tratamiento-5": {
         title: "Dermapen (Microneedling)",
         description: "Dermapen es un avanzado dispositivo de microneedling que utiliza múltiples y diminutas agujas para crear micro-perforaciones controladas en la piel. Este proceso, conocido como terapia de inducción de colágeno, activa la respuesta natural de reparación del cuerpo. El resultado es una potente estimulación de la producción de colágeno y elastina. Es un tratamiento excepcional para mejorar la textura, minimizar el tamaño de los poros, suavizar cicatrices (especialmente de acné) y atenuar arrugas finas, rejuveneciendo la piel desde dentro."
+    },
+    "info-tratamiento-6": {
+        title: "Hidratación Profunda de la Piel",
+        description: "Este tratamiento, a menudo llamado 'Skinbooster', es un baño de hidratación intensiva para la piel. Consiste en microinyecciones de ácido hialurónico de muy baja densidad y complejos vitamínicos que nutren la dermis desde dentro. A diferencia de las cremas, actúa en las capas profundas, restaurando el equilibrio hídrico, mejorando la elasticidad y la textura. Es el tratamiento perfecto para pieles deshidratadas, apagadas o con finas líneas, devolviéndoles una luminosidad y frescura inmediatas."
+    },
+    "info-tratamiento-7": {
+        title: "Peelings Químicos",
+        description: "El peeling químico es un procedimiento dermatológico controlado que utiliza soluciones específicas para exfoliar y acelerar la renovación de las capas superficiales de la piel. Al eliminar las células muertas, se estimula la regeneración celular. Es un tratamiento excelente para mejorar la textura general, unificar el tono, atenuar manchas solares o de acné, controlar la grasa y suavizar líneas finas. El resultado es una piel visiblemente más uniforme, suave y luminosa. Personalizamos la intensidad del peeling según tu tipo de piel y objetivos."
     },
     "info-tratamiento-8": {
         title: "Plasma Rico en Plaquetas (PRP)",
