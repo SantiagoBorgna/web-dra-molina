@@ -469,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 #turnos.seccion-cta {
     background-color: var(--color-principal); 
     text-align: center;
-    padding: 80px 30px;
+    padding: 60px 30px;
     max-width: 100%;
 }
 
