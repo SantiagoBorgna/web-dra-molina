@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     overflow: auto; 
     background-color: rgba(0,0,0,0.6); 
     backdrop-filter: blur(5px); 
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100dvh;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         z-index: 1000; 
@@ -783,6 +783,10 @@ h1, h2, h3, h4, h5, h6 {
     /* TRATAMIENTOS */
     .tratamientos-container {
         grid-template-columns: 1fr;
+    }
+
+    .modal-content h3 {
+        font-size: 1.6rem;
     }
 
     /* TURNOS */

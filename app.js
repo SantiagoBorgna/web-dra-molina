@@ -48,8 +48,8 @@ const tratamientosData = {
         description: "Ofrecemos un enfoque integral para la alopecia y la debilidad capilar, tanto en hombres como en mujeres. Tras un diagnóstico preciso, diseñamos un plan de choque personalizado que puede incluir varias técnicas. Habitualmente combinamos el Plasma Rico en Plaquetas (PRP) para revitalizar el folículo, con la mesoterapia capilar, que aporta un cóctel de vitaminas y nutrientes esenciales directamente en el cuero cabelludo. Este enfoque sinérgico busca frenar la caída, fortalecer el cabello existente y estimular el crecimiento de nuevo cabello."
     },
     "info-tratamiento-10": {
-        title: "Nanolaser (Láser de Picosegundos)",
-        description: "Contamos con tecnología láser de última generación que trabaja en picosegundos (la millonésima parte de un segundo). Esta altísima velocidad permite fragmentar el pigmento en partículas diminutas sin apenas calentar la piel circundante. Es el 'gold standard' para la eliminación de tatuajes de todos los colores y el tratamiento de manchas pigmentarias profundas y melasma. Además, se utiliza para el rejuvenecimiento facial (resurfacing), mejorando espectacularmente la textura de la piel, cicatrices y poros."
+        title: "Telangiectasias",
+        description: "Las telangiectasias, conocidas popularmente como 'arañitas vasculares', son esas pequeñas venas dilatadas de color rojo o morado que aparecen en la superficie de la piel, comúnmente en piernas y rostro. Aunque suelen ser un problema estético, en ocasiones pueden causar síntomas como pesadez o molestias. Ofrecemos tratamientos altamente efectivos, como la escleroterapia (inyección de una solución que cierra la vena) o el láser vascular, que las coagula desde el exterior. Ambos procedimientos se realizan en consulta, son mínimamente invasivos y permiten eliminar estas venitas, devolviendo a la piel un tono uniforme y saludable."
     },
     "info-tratamiento-11": {
         title: "Arañitas Vasculares",
@@ -115,6 +115,8 @@ document.addEventListener('keydown', (event) => {
         closeModal();
     }
 });
+
+botonTurnoModal.addEventListener('click', closeModal);
 
 // Cerrar menu
 allLinks.forEach(link => {
